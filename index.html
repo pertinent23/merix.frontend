@@ -7,8 +7,52 @@
     <title> Merix </title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/_base.css">
+    <link rel="stylesheet" href="./css/_index.css">
+    <link rel="icon" href="./icons/icon.outline.16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./icons/icon.outline.32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./icons/icon.outline.64.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="./icons/icon.outline.256.png" sizes="256x256" type="image/png">
 </head>
 <body>
-    <h1 style="font-family: north;"> My code <i class="bi bi-globe"></i> </h1>
+    <header></header>
+    <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <section class="navbar-brand d-flex align-items-center">
+            <img src="./icons/icon.outline.64.png" alt="web site icon">
+            <p> Merix </p>
+        </section>
+        <section class="navbar-container d-flex align-items-center justify-content-center">
+            <a href="./index.html" class="d-flex align-items-center navbar-item active">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <p class="d-none d-sm-flex"> Accueil </p>
+            </a>
+            <a href="#" class="d-flex align-items-center navbar-item">
+                <i class="bi bi-person-circle"></i>
+                <p class="d-none d-sm-flex"> Connexion </p>
+            </a>
+            <a href="#" class="d-flex align-items-center navbar-item">
+                <i class="bi bi-pencil-square"></i>
+                <p class="d-none d-sm-flex"> Inscription </p>
+            </a>
+        </section>
+    </nav>
+    <main>
+        <section class="parts part-1 w-100 d-flex flex-column-reverse flex-md-row">
+            <div class="slide-1 slide">
+                <div class="slide-title"> Bienvenue dans notre Content Management System, <span> Merix </span> </div>
+                <p> Vous pourrez créer et personnaliser un site web pour votre commune afin d'accroître son tourisme et d'augmanté la rapidité administrative et la transparence. </p>
+                <div class="button d-flex justify-content-center align-items-center">
+                    <i class="bi bi-star-fill"></i>
+                    <span> Commencer </span>
+                </div>
+            </div>
+            <div class="slide-2 slide d-flex justify-content-center align-items-center">
+                <div class="slide-image-container d-flex justify-content-center align-items-center">
+                    <img src="./images/93413-rocket-purple.gif" alt="the animation">
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
