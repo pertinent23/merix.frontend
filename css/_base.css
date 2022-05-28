@@ -11,6 +11,11 @@ nav{
     background-image: var( --gradient );
 }
 
+nav.light{
+    background-image: none;
+    background-color: var(--cultured);
+}
+
 nav section{
     margin: 0px;
     padding: 0px;
@@ -32,6 +37,10 @@ nav .navbar-brand p{
     font-size: 2.3em;
     color: var( --cultured );
     letter-spacing: 0.3em;
+}
+
+nav.light .navbar-brand p{
+    color: var( --purple );
 }
 
 nav .navbar-container{
@@ -62,15 +71,32 @@ nav .navbar-item:hover{
     background-color: rgba( 248, 249, 250, 0.2 );
 }
 
+nav.light .navbar-item{
+    color: var(--davys-grey);
+    border-radius: 0px;
+    border-bottom: 3px solid transparent;
+}
+
 nav .navbar-item.active{
     background-color: var( --cultured );
     color: var( --purple );
     box-shadow: 0px 0px 70px var( --purple );
 }
 
+
+nav.light .navbar-item.active{
+    box-shadow: none;
+    border-bottom-color: var( --purple );
+}
+
 nav .navbar-item.active i,
 nav .navbar-item.active p{
     text-shadow: 0px 0px 2px var( --purple );
+}
+
+nav.light .navbar-item.active i,
+nav.light .navbar-item.active p{
+    text-shadow: none;
 }
 
 nav .navbar-item:nth-child( 2 ){
@@ -89,4 +115,50 @@ nav .navbar-item p{
     font-weight: 900;
     font-size: 0.9em;
     letter-spacing: 0.12em;
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    top: 0px;
+    left: 0px;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    -webkit-backdrop-filter: blur( 5px );
+    backdrop-filter: blur( 5px );
+    display: none;
+}
+
+.loader-main{
+    width: calc( 100% - 30px );
+    height: 200px;
+    background-color: var(--cultured);
+    max-width: 400px;
+}
+
+.loader-main .loader-rotor{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 5px solid var(--purple);
+    border-bottom-color: transparent;
+    border-radius: 100%;
+    animation: loader 0.75s ease-in 0.3s infinite;
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate( 0deg );
+    }
+    100%{
+        transform: rotate( 360deg );
+    }
+}
+
+.loader-main .loader-text{
+    margin-left: 20px;
+    color: var(--purple);
+    font-weight: 600;
+    text-transform: uppercase;
 }
