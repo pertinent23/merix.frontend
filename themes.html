@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/icons.css">
     <link rel="stylesheet" href="./css/_base.css">
     <link rel="stylesheet" href="./css/_account.css">
-    <link rel="stylesheet" href="./css/_sites.css">
+    <link rel="stylesheet" href="./css/_themes.css">
     <link rel="icon" href="./icons/icon.outline.16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="./icons/icon.outline.32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="./icons/icon.outline.64.png" sizes="64x64" type="image/png">
@@ -17,28 +17,43 @@
 </head>
 <body>
     <header class="colored"></header>
-    <nav class="d-flex flex-column justify-content-between align-items-center light">
+    <nav class="d-flex flex-column justify-content-between align-items-center">
         <section class="navbar-brand d-flex align-items-center">
-            <img src="./icons/icon.64.png" alt="web site icon">
-            <p> sites </p>
+            <img src="./icons/icon.outline.64.png" alt="web site icon">
+            <p> themes </p>
+        </section>
+        <section class="navbar-container d-flex align-items-center justify-content-center">
+            <a href="./index.html" class="d-flex align-items-center navbar-item">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <p class="d-none d-sm-flex"> Accueil </p>
+            </a>
+            <a href="./account.html" class="d-flex align-items-center navbar-item active">
+                <i class="bi bi-person-circle"></i>
+                <p class="d-none d-sm-flex"> Connexion </p>
+            </a>
+            <a href="./form.html" class="d-flex align-items-center navbar-item">
+                <i class="bi bi-pencil-square"></i>
+                <p class="d-none d-sm-flex"> Inscription </p>
+            </a>
         </section>
     </nav>
     <main class="w-100 d-flex flex-column">
         <section class="d-flex content-page-options justify-content-center">
-            <div class="page-option page-item d-flex flex-column align-items-center justify-content-center">
-                <div class="page-option-icon d-flex justify-content-center align-items-center">
-                    <i class="bi bi-window-plus"></i>
-                </div><br>
-                <span class="page-item-title"> CREER </span>
-            </div>
-            <a href="#" class="page-option page-item d-flex flex-column align-items-center justify-content-between">
-                <div class="page-image d-flex justify-content-center align-items-center">
-                    <i class="bi bi-images"></i>
-                    <img src="./images/fruit.png" alt="logo of the site">
+            <div class="theme-item d-flex flex-column align-items-center justify-content-center">
+                <div class="add-theme d-flex justify-content-center align-items-center">
+                    <i class="bi bi-plus-circle-dotted"></i>
                 </div>
-                <span class="page-item-title"> Complement </span>
-                <span class="page-item-slogan"> slogan of my site </span>
-            </a>
+                <span class="theme-add-title"> AJOUTER </span>
+            </div>
+            <div class="theme-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./images/screely-1653749724276.png" alt="theme mockup">
+                <div class="theme-content-action d-flex justify-content-center align-items-center">
+                    <button class="d-flex align-items-center">
+                        <i class="bi bi-shuffle"></i>
+                        <span> APPLIQUER </span>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
