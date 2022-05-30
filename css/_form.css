@@ -138,11 +138,11 @@ form{
 }
 
 .field input:focus ~ i{
-    color: purple;
+    color: var(--purple);
 }
 
 .field input:focus ~ label{
-    color: purple;
+    color: var(--purple);
     height: fit-content;
     font-size: 0.65em;
     top: 10px;
@@ -156,7 +156,7 @@ form{
 }
 
 .field input:focus ~ span{
-    background-color: purple;
+    background-color: var(--purple);
 }
 
 .form-error{

@@ -23,8 +23,8 @@
     --davys-grey: #495057ff;
     --onyx: #343a40ff;
     --eerie-black: #212529ff;
-    --purple: #7400b8ff;
-    --french-violet: #6930c3ff;
+    --purple: /*#7400b8ff*/#000000;
+    --french-violet: /*#6930c3ff*/#111111;
     --slate-blue: #5e60ceff;
     --united-nations-blue: #5390d9ff;
     --carolina-blue: #4ea8deff;
