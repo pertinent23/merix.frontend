@@ -16,6 +16,11 @@ nav.light{
     background-color: var(--cultured);
 }
 
+nav.transparent{
+    background-image: none;
+    background-color: transparent;
+}
+
 nav section{
     margin: 0px;
     padding: 0px;

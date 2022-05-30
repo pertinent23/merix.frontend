@@ -2,11 +2,20 @@ main{
     overflow: hidden;
 }
 
+.content-head-data{
+    background-image: var( --gradient );
+    clip-path: polygon( 0% 0%, 0% 90%, 40% 100%, 100% 90%, 100% 0%, 0% 0% );
+}
+
 .part-1{
     min-height: 85vh;
-    background-image: var( --gradient );
     overflow: hidden;
-    clip-path: polygon( 0% 0%, 0% 90%, 40% 100%, 100% 90%, 100% 0%, 0% 0% );
+}
+
+@media screen and (max-width: 768px) {
+    .part-1{
+        padding-bottom: 100px;
+    }
 }
 
 .parts{
