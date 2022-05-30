@@ -2,8 +2,8 @@
     margin-top: 30px;
 }
 
+.list-buttons,
 .list-item{
-    border-radius: 7px;
     min-height: 100px;
     max-height: min-content;
     max-width: 700px;
@@ -74,6 +74,7 @@
     margin-bottom: 7px;
 }
 
+.list-buttons button,
 .list-item .list-item-button-container button{
     margin: 0px;
     margin-right: 7px;
@@ -84,8 +85,29 @@
     border-radius: 12px;
     padding: 8px 12px;
     font-size: 13px;
+    cursor: pointer;
 }
 
+.list-buttons button{
+    padding: 10px 20px;
+    font-size: 16px;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.list-buttons button.submit{
+    background-color: var(--purple);
+    color: var(--cultured);
+    border: 3px solid var(--purple);
+}
+
+.list-buttons button.cancel{
+    background-color: var(--cultured);
+    color: var(--purple);
+    border: 3px solid var(--purple);
+}
+
+.list-buttons button span,
 .list-item .list-item-button-container button span{
     margin-left: 5px;
     font-weight: 600;
