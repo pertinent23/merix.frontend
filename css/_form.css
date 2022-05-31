@@ -88,7 +88,7 @@ form{
     font-size: 25px;
 }
 
-.field input{
+.field .field-control{
     height: 100%;
     outline: none;
     width: 100%;
@@ -99,6 +99,11 @@ form{
     padding-left: 15px;
     transition-duration: 0.2s;
     box-sizing: border-box;
+}
+
+.field textarea.field-control{
+    height: 100px;
+    padding-top: 30px !important;
 }
 
 .field label{
@@ -128,20 +133,20 @@ form{
     transition-duration: 0.2s;
 }
 
-.field input:focus,
-.field input:not(:placeholder-shown){
+.field .field-control:focus,
+.field .field-control:not(:placeholder-shown){
     padding-top: 15px;
 }
 
-.field input:not(:placeholder-shown){
+.field .field-control:not(:placeholder-shown){
     padding-left: 20px;
 }
 
-.field input:focus ~ i{
+.field .field-control:focus ~ i{
     color: var(--purple);
 }
 
-.field input:focus ~ label{
+.field .field-control:focus ~ label{
     color: var(--purple);
     height: fit-content;
     font-size: 0.65em;
@@ -149,13 +154,13 @@ form{
     font-weight: bold;
 }
 
-.field input:not( :placeholder-shown ) ~ label{
+.field .field-control:not( :placeholder-shown ) ~ label{
     height: fit-content;
     font-size: 0.65em;
     top: 10px;
 }
 
-.field input:focus ~ span{
+.field .field-control:focus ~ span{
     background-color: var(--purple);
 }
 
